@@ -13,65 +13,28 @@
       <h1>Register your account</h1>
 
       <form>
-        <div class="input-group">
-          <label>Name</label>
-          <input
-            id="name"
-            type="text"
-            placeholder="Anders Andersson (required)"
-            name="name"
-            required
-          />
+        <div class="input-section">
+            <label>Name</label>
+            <input type="text" name="name" required>
         </div>
-
-        <div class="input-group">
-          <label>Username</label>
-          <input
-            id="username"
-            type="text"
-            placeholder="anders.andersson (required)"
-            name="username"
-            required
-          />
+        <div class="input-section">
+            <label>Username</label>
+            <input type="text" name="username" required>
         </div>
-
-        <div class="input-group">
-          <label>Email</label>
-          <input
-            id="email"
-            type="email"
-            placeholder="abc@hotmail.com (required)"
-            name="email"
-            required
-          />
+        <div class="input-section">
+            <label>Email</label>
+            <input type="email" name="email" required>
         </div>
-
-        <div class="input-group">
-          <label>Password</label>
-          <input
-            id="password"
-            type="password"
-            placeholder="Min. 8 chars long (required)"
-            name="password"
-            minlength="8"
-            required
-          />
+        <div class="input-section">
+            <label>Password</label>
+            <input type="password" name="password" minlength="8" required>
         </div>
-
-        <div class="input-group">
-          <label>Confirm Password</label>
-          <input
-            id="confirmPassword"
-            type="password"
-            placeholder="Type password again (required)"
-            name="confirmPassword"
-            minlength="8"
-            required
-          />
+        <div class="input-section">
+            <label>Confirm Password</label>
+            <input type="password" name="confirm-password" minlength="8" required>
         </div>
-
-        <input type="submit" value="Register" disabled />
-      </form>
+        <input type="submit" value="Submit" disabled>
+    </form>
     </main>
 
     <script src="index.js"></script>
