@@ -49,10 +49,22 @@ body {
   background-color: white;
   position: relative;
   top: 12px;
-  left: -40%;
+  left: -42%;
   font-size: 16px;
   color: var(--blueColor);
   pointer-events: none;
+}
+
+#userNameLabel {
+    left: -39%
+}
+
+#passwordLabel {
+    left: -40%;
+}
+
+#confirmPasswordLabel {
+    left: -33%;
 }
 
 .signUpButton {
