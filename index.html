@@ -1,34 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <title>Account Registration</title>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="stylesheet" href="index.css">
-</head>
-<body>
-    <h1 class="header">Register your account</h1>
-    <form class="inputForm" action="submit">
-        <label id="nameLabel">Name</label>
-        <input type="text" id="nameInput" placeholder="Anders Andersson" required>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <label id="userNameLabel">Username</label>
-        <input type="text" id="usernameInput" placeholder="anders.andersson44" required>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Register your account</h1>
 
-        <label id="mailLabel">Email</label>
-        <input type="email" id="mailInput" placeholder="abc@hotmail.com" required>
+      <form>
+        <div class="input-group">
+          <label>Name</label>
+          <input
+            id="name"
+            type="text"
+            placeholder="Anders Andersson (required)"
+            name="name"
+            required
+          />
+        </div>
 
-        <label id="passwordLabel">Password</label>
-        <input type="password" id="passwordInput" placeholder="Minimum 8 chars long" min="8" required>
+        <div class="input-group">
+          <label>Username</label>
+          <input
+            id="username"
+            type="text"
+            placeholder="anders.andersson (required)"
+            name="username"
+            required
+          />
+        </div>
 
-        <label id="confirmPasswordLabel">Confirm Password</label>
-        <input type="password" id="confirmPasswordInput" placeholder="Confirm Password" min="8" required>
+        <div class="input-group">
+          <label>Email</label>
+          <input
+            id="email"
+            type="email"
+            placeholder="abc@hotmail.com (required)"
+            name="email"
+            required
+          />
+        </div>
 
-        <button class="signUpButton" type="submit">Sign Up</button>
-    </form>
+        <div class="input-group">
+          <label>Password</label>
+          <input
+            id="password"
+            type="password"
+            placeholder="Min. 8 chars long (required)"
+            name="password"
+            minlength="8"
+            required
+          />
+        </div>
+
+        <div class="input-group">
+          <label>Confirm Password</label>
+          <input
+            id="confirmPassword"
+            type="password"
+            placeholder="Type password again (required)"
+            name="confirmPassword"
+            minlength="8"
+            required
+          />
+        </div>
+
+        <input type="submit" value="Register" disabled />
+      </form>
+    </main>
 
     <script src="index.js"></script>
-</body>
+  </body>
 </html>

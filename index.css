@@ -3,81 +3,74 @@
 }
 
 body {
-  background-color: var(--blueColor);
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Times New Roman', Times, serif;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  background-color: var(--blueColor);
+}
+
+main {
+  display: flex;
   flex-direction: column;
 }
 
-.header {
-  color: white;
-  display: inherit;
+h1 {
+    color:white;
 }
 
-.inputForm {
-  position: relative;
+label {
+    color: var(--blueColor);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
   background-color: white;
-  display: inherit;
-  align-items: inherit;
-  flex-direction: inherit;
-  padding: 50px;
-  width: 30%;
-  height: 500px;
-  border-radius: 10px;
+  border-radius: 1em;
+  padding:1rem;
 }
 
-.inputForm input {
-  width: 100%;
-  height: 10%;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  margin-bottom: 15px;
-  border: 2px solid rgb(104, 109, 122);
-  border-radius: 10px;
-  font-size: 1.3em;
+input {
+  border: 0.1rem solid grey;
+  padding: 0.5rem;
+  border-radius: 0.3rem;
 }
 
-.inputForm input:focus {
-  border-color: var(--blueColor);
-  outline: none;
+input:focus {
+    border-color: var(--blueColor);
+    outline: none;
 }
 
-.inputForm label {
-  padding: 0 5px;
-  margin: 0;
-  background-color: white;
-  position: relative;
-  top: 12px;
-  left: -42%;
-  font-size: 16px;
-  color: var(--blueColor);
-  pointer-events: none;
+input:user-invalid {
+  border-color: red;
 }
 
-#userNameLabel {
-    left: -39%
-}
-
-#passwordLabel {
-    left: -40%;
-}
-
-#confirmPasswordLabel {
-    left: -33%;
-}
-
-.signUpButton {
-  width: 100%;
-  height: 20%;
-  border-radius: 10px;
-  background-color: rgb(12, 127, 47);
+input[type="submit"] {
+  background-color: #12c235;
   color: white;
-  border: none;
+  padding: 0.75rem;
+  margin-top: 0.25rem;
   font-size: 2em;
+  border:none;
 }
 
-.signUpButton:hover {
-    cursor: pointer;
-    opacity: 80%;
+input[type="submit"]:hover {
+  opacity: 90%;
+  cursor: pointer;
+}
+
+input[type="submit"]:disabled {
+  background-color: grey;
+  cursor: not-allowed;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
 }
