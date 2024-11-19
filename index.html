@@ -10,16 +10,21 @@
 </head>
 <body>
     <h1 class="header">Register your account</h1>
-    <form class="inputForm">
+    <form class="inputForm" action="submit">
         <label for="name">Name</label>
-        <input type="text" name="name" id="name">
-        <input type="text" name="username" id="username" placeholder="Username">
+        <input type="text" name="name" id="name" placeholder="Anders Andersson" required>
+
+        <input type="text" name="username" id="username" placeholder="Username" required>
+
         <label for="email">Email</label>
-        <input type="email" name="mail" id="mail" placeholder="abc@hotmail.com">
+        <input type="email" name="mail" id="mail" placeholder="abc@hotmail.com" required>
+
         <label for="password">Password</label>
-        <input type="password" name="password" id="password" placeholder="Minimum 8 chars long" min="8">
-        <input type="password" name="confirmPassword" id="confirmPassword" placeholder="Confirm Password" min="8">
-        <button>Sign Up</button>
+        <input type="password" name="password" id="password" placeholder="Minimum 8 chars long" min="8" required>
+
+        <input type="password" name="confirmPassword" id="confirmPassword" placeholder="Confirm Password" min="8" required>
+
+        <button class="signUpButton" type="submit">Sign Up</button>
     </form>
 
     <script src="index.js"></script>

@@ -55,7 +55,7 @@ body {
   pointer-events: none;
 }
 
-.inputForm button {
+.signUpButton {
   width: 100%;
   height: 20%;
   border-radius: 10px;
@@ -63,4 +63,9 @@ body {
   color: white;
   border: none;
   font-size: 2em;
+}
+
+.signUpButton:hover {
+    cursor: pointer;
+    opacity: 80%;
 }
